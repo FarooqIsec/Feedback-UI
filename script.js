@@ -9,7 +9,7 @@ let selectedrating = "";
 ratingElement.forEach((ratingElemen) => {
     ratingElemen.addEventListener("click", (even) => {
     removeActive(); 
-        selectedrating = even.target.innerText || even.target.parentNode.innerHTML;
+        selectedrating = even.target.innerText || even.target.parentNode.innerText;
 
         even.target.classList.add("active");
         even.target.parentNode.classList.add("active");
